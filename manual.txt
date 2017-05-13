@@ -4,7 +4,7 @@ This is a program and code for the text simplification project Simplifyeng.
 Process needs powershell v3.0+
 
 Libraries:
-- Download necessary libraries for the step 1_getCollocations and 3_getComplexities here:
+- Download necessary libraries for the step 1_getCollocations and 3_getComplexities here: https://www.dropbox.com/sh/erpohyxgoulform/AAD8vAbr5_e5MNj-kgNBkauba?dl=0
 - Zip file contains two folders corresponding to the steps. Copy folder "step_1/lib" to "1_getCollocations/code"
 - Copy folder "step_3/lib" to "3_getComplexities/code"
 
