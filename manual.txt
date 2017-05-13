@@ -1,0 +1,63 @@
+@ Van Minh Nguyen 2017
+
+This is a program and code for the text simplification project Simplifyeng.
+Process needs powershell v3.0+
+
+Libraries:
+- Download necessary libraries for the step 1_getCollocations and 3_getComplexities here:
+- Zip file contains two folders corresponding to the steps. Copy folder "step_1/lib" to "1_getCollocations/code"
+- Copy folder "step_3/lib" to "3_getComplexities/code"
+
+Structure:
+- Each step folder contains a "Code" folder with either a PowerShell script or a jar file.
+- Structure of the folders should not be modified as steps are dependent on each other.
+- It is possible to execute steps one by one to see effects of individual steps.
+
+
+
+Corpus:
+- exampleCorpus: exampleCorpus which is going to be used in the case that the user will not provide their own corpus
+- inputCorpus - input unannotated corpus with ".txt" suffixes
+
+
+
+1_getCollocations:
+- Role: scores different potential collocations for further processing
+- Code: contains .jar file, corresponding libraries and javaFiles contains .java code
+- exampleCollocations: Contains an example .csv result file - higher the score of a potential collocation, the more likely it is a collocation
+- outputCollocation: The results will be put here
+- How it works: Processes corpus\inputCorpus, if no proprietary corpus, then takes the exampleCorpus and gives scores to potential collocations
+- How to use: Command line - execute in the .jar folder: "java -jar collocations.jar"
+
+
+
+2_annotateCorpusCollocations:
+- Role: Annotates collocations in exampleCorpus/inputCorpus and outputs it to outputCollocationsCorpus
+- Code: has powershell scripts
+- ExampleCollocationsCorpus: Contains an example of an annotated corpus
+- OutputCollocationsCorpus: Annotated corpus will be output here
+- OutputCollocationsList: List of collocations .txt output here
+- How it works: parses collocations from the list output in 1_getCollocations and thenfinds these collocations in the corpus and annotates accordingly using tags "<collocation></collocation>"
+- How to use: Command line - execute: "powershell C:\...............\2_annotateCorpusCollocations\code\check.ps1"
+
+
+
+3_getComplexities:
+- Role: scores different potential complex terms
+- Code: contains .jar file, corresponding libraries and javaFiles contains .java code
+- exampleComplex: Contains an example .csv result file - lower the score of the term, the more likely it is complex, 0 means not complex at all
+- outputComplex: The results will be put here
+- How it works: Processes corpus\inputCorpus in the second step, if no proprietary corpus, then takes the exampleCorpus and gives scores to potential complex terms
+- How to use: Command line - execute in the .jar folder: "java -jar collocations.jar"
+
+
+
+4_annotateComplex:
+- Role: Annotates complex terms in the input file and outputs to results
+- Code: has powershell scripts
+- ExampleInput: Contains an example of an article that can be annotated
+- ExampleResult: Contains an example of processed article
+- Input: Place where a file can be put for processing
+- Result: Place where processed article will be output
+- How it works: gets collocations from step 2 and complex terms from step 3, annotates "input" or "exampleInput" alternatively as <collocation></collocation>, <complex></complex>
+- How to use: Command line - execute: "powershell C:\...............\4_annotateComplex\code\check.ps1"

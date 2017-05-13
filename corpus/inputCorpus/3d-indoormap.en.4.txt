@@ -1,0 +1,39 @@
+The young scientists in this basement laboratory are all gathered around a smartphone. They aren't on break, this is their work.
+
+Their computer science professor is holding the phone. He is walking through the University of Minnesota's Walter Library.
+
+As he walks, a 3-D map of the library appears on the phone's screen.
+
+The professor and his students are working with Google to develop smartphones that can easily make 3-D maps. Google gave the university $1.35 million to work on this technology.
+
+## Advanced Map Technology
+
+Nowadays, many people use Google Maps for directions. Indoor 3-D maps would have many possibilities.
+
+These maps could help you find your classroom in a huge school or find a coffee shop in an airport.
+
+There are also other uses. People trying to sell their house could make digital tours. The technology could help blind people walk through a building.
+
+The technology is new and very advanced. Still, the scientists hope it can work on smartphones people already own.
+
+Professor Stergios Roumeliotis has been working on map technology since 1995. He says this new technology could be as important as Google Maps.
+
+"This new software could become the Google Maps of the indoor world," Roumeliotis said. "This is where we spend most of our time."
+
+The University of Minnesota's software is important for two reasons. First, it creates a map almost instantly. Second, it does this without slowing down the phone or using too much battery power.
+
+To do that, the University of Minnesota team had to try some creative design ideas.
+
+## Cellphone's Camera And Sensor
+
+Most map software uses global positioning satellite (GPS) signals. This new software doesn't. Instead it uses the phone's camera and built-in motion sensor.
+
+Scientists at the University of Minnesota worked with NASA in the past to help navigate Mars landing vehicles. Now, they are using that knowledge for the 3-D mapping project.
+
+It's not unusual for Google to reach out to universities for help in creating new technology, explained Scott Strawn. Strawn's job is to closely follow what tech companies like Google are doing.
+
+There is a lot of brainpower at universities, Strawn said. That's what Google needs to move these projects forward.
+
+Mapping the Mall of America today would take many computers and a lot of time, Roumeliotis said.
+
+"Our plan is to do that on a cellphone in almost real time," he added. "We're on the frontier of this kind of mapping."
